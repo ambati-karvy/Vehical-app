@@ -1,0 +1,12 @@
+
+<div class="row">
+    <div class="col-xs-3 col-sm-3 col-md-12 col-lg-12">
+        <button  [routerLink]="['add-vehical']" type="button" class="btn btn-success">New vehical</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12 ">
+      <app-vehical-detail *ngFor="let vehical of vehicals let i = index" [vehical]="vehical" [i]="i"></app-vehical-detail>
+  </div>
+</div>
